@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Talal Ahmad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Talal Ahmad</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <header class="hero full-hero">
+    <div class="hero-box">
+      <div class="hero-left">
+        <h1>Talal Ahmad</h1>
+        <p>Bachelor in Computer Engineering • 2nd Semester</p>
+        <p>I love exploring <strong>computer hardware</strong> and building systems from the ground up.</p>
+      </div>
+      <div class="hero-right">
+        <img src="asset/pic1.jpg" alt="Circuit board"/>
+      </div>
+    </div>
+  </header>
+
+  <section class="three-boxes">
+    <div class="box">
+      <h3>📁 My Work</h3>
+      <p>Projects in C, C++, and hardware-level programming.</p>
+    </div>
+    <div class="box">
+      <h3>ℹ️ Info</h3>
+      <p>Currently in 2nd semester of Computer Engineering, passionate about electronics and embedded systems.</p>
+    </div>
+    <div class="box">
+      <h3>📬 Contact</h3>
+      <p>Reach me at <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- You can add more sections here -->
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Talal Ahmad</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggleBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>
